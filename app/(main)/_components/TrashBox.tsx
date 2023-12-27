@@ -15,6 +15,7 @@ import { ConfirmModal } from "@/components/modals/ConfirmModal";
 export const TrashBox = () => {
   const router = useRouter();
   const params = useParams();
+
   const documents = useQuery(api.documents.getTrash);
   const restore = useMutation(api.documents.restore);
   const remove = useMutation(api.documents.remove);
